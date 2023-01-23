@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
-    <meta name="keywords" content="cuadros, arte, pintura, decoración">
-    <title>by Sof | Cuadros pintados a mano</title>
-    <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../sass/main.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
+        <meta name="keywords" content="cuadros, arte, pintura, decoración">
+        <title>by Sof | Cuadros pintados a mano</title>
+        <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../sass/main.css">
+    </head>
 <body>
     
     <div class="grid_area">
@@ -23,7 +22,6 @@
             <nav class="menu_mobile">
                 <li><a href="../index.html" class="mobile_item fa-solid fa-house"></a></li>
                 <li><a href="./productos.html" class="mobile_item fa-solid fa-tags"></a></li>
-                <li><a href="./carrito.html" class="mobile_item fa-solid fa-cart-shopping"></a></li>
                 <li><a href="./contacto.html" class="mobile_item fa-solid fa-envelope"></a></li>
                 <li><a href="./nosotros.html" class="mobile_item fa-solid fa-circle-info"></a></li>
                 <li><a href="./faqs.html" class="mobile_item fa-solid fa-circle-question"></a></li>
@@ -33,7 +31,6 @@
                 <ul>
                     <li><a href="../index.html" class="menu_item">Inicio</a></li>
                     <li><a href="./productos.html" class="menu_item">Productos</a></li>
-                    <li><a href="./carrito.html" class="menu_item">Carrito</a></li>
                     <li><a href="./contacto.html" class="menu_item">Contacto</a></li>
                     <li><a href="./nosotros.html" class="menu_item">Nosotros</a></li>
                     <li><a href="./faqs.html" class="menu_item">FAQs</a></li>
@@ -41,13 +38,69 @@
             </nav>
         </header>
 
-        <main>
-            <div class="d-flex justify-content-center">
-                <div class="spinner-border text-info" role="status" aria-hidden="true"></div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <p>Página en construcción</p>
-            </div>
+        <main class="mainFaqs">
+            
+            <h2>Preguntas Frecuentes</h2>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">¿Qué debo tener en cuenta al encargar un cuadro?</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Hay que tener en cuenta las medidas que se quieren para el cuadro. En caso de que el diseño sea personalizado, enviando tu idea yo imágen de referencia puedo orientarte en las medidas acordes para que el diseño quede bien proporcionado.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Cúanto tiempo demoran los pedidos?</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Dependiendo del diseño. Los cuadros oneline demoran aproximadamente una semana. Los cuadros personalizados entre una semana a un mes, dependiendo del nivel de detalle.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Cuáles son los medios de pago?</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Se puede pagar mediante
+                            <ul>
+                                <li>Transferencia</li>
+                                <li>MercadoPago</li>
+                                <li>Tarjeta de Débito</li>
+                                <li>Tarjeta de Crédito</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">¿Cuál es el proceso para solicitar un cuadro?</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Para solicitar un cuadro deberás ingresar en la pestaña Productos seleccioná el diseño que mas te guste, o bien podés enviarnos tu idea a nuestro mail, whatsapp o instagram. 
+                            <br>
+                            Luego seleccioná el tamaño, la cantidad y si lo necesitas para una fecha especial. Hacé clic en agregar al carrito. Seleccioná la forma de pago y lugar de envío. ¡Y listo!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">¿Puedo elegir el color de fondo y/o de líneas en los cuadros oneline?</button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Por supuesto. Ya sea cambiarle el color al fondo, a las líneas, o a ambos. Tené en cuenta a la hora de elegir los colores que tengan un buen contraste. Por ejemplo, líneas claras-fondo oscuro o viceversa.
+                        </div>
+                    </div>
+                </div>
         </main>
 
         <footer>
@@ -66,6 +119,5 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
 </body>
 </html>

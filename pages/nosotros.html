@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
-    <meta name="keywords" content="cuadros, arte, pintura, decoración">
-    <title>by Sof | Cuadros pintados a mano</title>
-    <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../sass/main.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
+        <meta name="keywords" content="cuadros, arte, pintura, decoración">
+        <title>by Sof | Cuadros pintados a mano</title>
+        <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../sass/main.css">
+    </head>
 <body>
     
     <div class="grid_area">
@@ -23,8 +22,6 @@
             <nav class="menu_mobile">
                 <li><a href="../index.html" class="mobile_item fa-solid fa-house"></a></li>
                 <li><a href="./productos.html" class="mobile_item fa-solid fa-tags"></a></li>
-                <li><a href="./carrito.html" class="mobile_item fa-solid fa-cart-shopping"></a></li>
-                <li><a href="./contacto.html" class="mobile_item fa-solid fa-envelope"></a></li>
                 <li><a href="./nosotros.html" class="mobile_item fa-solid fa-circle-info"></a></li>
                 <li><a href="./faqs.html" class="mobile_item fa-solid fa-circle-question"></a></li>
             </nav>
@@ -33,21 +30,51 @@
                 <ul>
                     <li><a href="../index.html" class="menu_item">Inicio</a></li>
                     <li><a href="./productos.html" class="menu_item">Productos</a></li>
-                    <li><a href="./carrito.html" class="menu_item">Carrito</a></li>
-                    <li><a href="./contacto.html" class="menu_item">Contacto</a></li>
                     <li><a href="./nosotros.html" class="menu_item">Nosotros</a></li>
                     <li><a href="./faqs.html" class="menu_item">FAQs</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <div class="d-flex justify-content-center">
-                <div class="spinner-border text-info" role="status" aria-hidden="true"></div>
+        <main class="mainAboutUs">
+            <div class="texto">
+                <p>
+                    " By Sof " es una idea que nace de un hobby. Desde chica me gusta dibujar y experimentar con la pintura, al practicar fui encontrando nuevos 
+                    estilos y técnicas. Soy artista autodidacta y nunca me imaginé que mi pasatiempo podría llegar a convertirse en algo que muchas personas pudieran apreciar  
+                    y sea, a la vez, comercial.
+                    <br><br>
+                    A continuación les muestro algunas de las obras que realicé:
+                </p>
             </div>
-            <div class="d-flex justify-content-center">
-                <p>Página en construcción</p>
+
+            
+
+            <div class="container text-center mt-5">
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-md-6 col-lg-6 py-3">
+                        <div class="card shadow" data-aos="zoom-in-up" data-aos-delay="300" data-aos-offset="1">
+                            <img src="../img/marcus.jpg" class="card-img-top" alt="bart y lisa">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 py-3">
+                        <div class="card shadow" data-aos="zoom-in-up" data-aos-delay="300" data-aos-offset="1">
+                            <img src="../img/productos/cinema7.jpg" class="card-img-top" alt="darth vader y anakin">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 py-3">
+                        <div class="card shadow" data-aos="zoom-in-up" data-aos-delay="300" data-aos-offset="1">
+                            <img src="../img/productos//varios1.jpg" class="card-img-top" alt="trippy eye">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 py-3">
+                        <div class="card shadow" data-aos="zoom-in-up" data-aos-delay="300" data-aos-offset="1">
+                            <img src="../img/productos/varios4.jpg" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <a href="./productos.html"><button type="button" class=" btnVerMas btn btn-outline-dark btn-sm">Ver más...</button></a>
         </main>
 
         <footer>
@@ -64,8 +91,5 @@
         </footer>
     </div>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
 </body>
 </html>

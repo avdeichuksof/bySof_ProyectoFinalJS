@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
-    <meta name="keywords" content="cuadros, arte, pintura, decoración">
-    <title>by Sof | Cuadros pintados a mano</title>
-    <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../sass/main.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
+        <meta name="keywords" content="cuadros, arte, pintura, decoración">
+        <title>by Sof | Cuadros pintados a mano</title>
+        <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="../sass/main.css">
+    </head>
 <body>
     
     <div class="grid_area">
@@ -23,7 +23,6 @@
             <nav class="menu_mobile">
                 <li><a href="../index.html" class="mobile_item fa-solid fa-house"></a></li>
                 <li><a href="./productos.html" class="mobile_item fa-solid fa-tags"></a></li>
-                <li><a href="./carrito.html" class="mobile_item fa-solid fa-cart-shopping"></a></li>
                 <li><a href="./contacto.html" class="mobile_item fa-solid fa-envelope"></a></li>
                 <li><a href="./nosotros.html" class="mobile_item fa-solid fa-circle-info"></a></li>
                 <li><a href="./faqs.html" class="mobile_item fa-solid fa-circle-question"></a></li>
@@ -33,7 +32,6 @@
                 <ul>
                     <li><a href="../index.html" class="menu_item">Inicio</a></li>
                     <li><a href="./productos.html" class="menu_item">Productos</a></li>
-                    <li><a href="./carrito.html" class="menu_item">Carrito</a></li>
                     <li><a href="./contacto.html" class="menu_item">Contacto</a></li>
                     <li><a href="./nosotros.html" class="menu_item">Nosotros</a></li>
                     <li><a href="./faqs.html" class="menu_item">FAQs</a></li>
@@ -42,27 +40,34 @@
         </header>
 
         <main class="main-productos">
-            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item custom"><a href="../index.html">Inicio</a></li>
-                    <li class="breadcrumb-item active " aria-current="page">Productos</li>
-                </ol>
-            </nav>
+            
             <h2 class="d-flex justify-content-center">Cuadros</h2>
 
             <div id="contProductos" class="row cont-productos"></div>
 
-            <!-- CARRITO -->
+            <!-- CARRILLO -->
             <hr>
             <h2 class="d-flex justify-content-center">Carrito de Compras</h2>
-            <h5 class="d-flex justify-content-center">Total: $<span id="total"></span></h5>
+            <h3 class="d-flex justify-content-center"><span id="total"></span></h3>
             
-            <div class="d-flex justify-content-center buttons-container">
+            <div class="buttons-container">
                 <button class="btn colorBoton" id="verCarrito">Ver Carrito</button>
                 <button class="btn colorBoton" id="vaciarCarrito">Vaciar Carrito</button>
             </div>
 
             <div class="row cont-carrito" id="contCarrito"></div>
+
+            <div class="buttons-container">
+                <button class="btn colorBoton" id="comprar">Finalizar compra</button>
+            </div>
+
+            <!--BOTON IR ARRIBA-->
+            <div class="button-arriba">
+                <a class="item" id="buttonTop">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+
         </main>
 
         <footer>
@@ -81,6 +86,7 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

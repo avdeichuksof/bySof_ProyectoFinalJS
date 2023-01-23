@@ -16,6 +16,22 @@
         }
     }
     
+    .mainContacto{
+        padding: 0 4rem;
+
+        .boxContact{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            
+            .boxInfo{
+                h2, p{
+                    padding: 1em;
+                }
+                margin: 0;
+            }
+            
+        }
+    }
 }
 @media(max-width: $tablet){
     .hdr_pages{

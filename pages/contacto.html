@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
-    <meta name="keywords" content="cuadros, arte, pintura, decoración">
-    <title>by Sof | Cuadros pintados a mano</title>
-    <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../sass/main.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cuadros personalizados pintados a mano. Hacemos cuadros personalizados | Podes elegir entre los diseños disponibles.">
+        <meta name="keywords" content="cuadros, arte, pintura, decoración">
+        <title>by Sof | Cuadros pintados a mano</title>
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/029b757842.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../sass/main.css">
+    </head>
+
 <body>
-    
+
     <div class="grid_area">
         <header class="hdr_pages">
             <div class="logo">
@@ -23,7 +23,6 @@
             <nav class="menu_mobile">
                 <li><a href="../index.html" class="mobile_item fa-solid fa-house"></a></li>
                 <li><a href="./productos.html" class="mobile_item fa-solid fa-tags"></a></li>
-                <li><a href="./carrito.html" class="mobile_item fa-solid fa-cart-shopping"></a></li>
                 <li><a href="./contacto.html" class="mobile_item fa-solid fa-envelope"></a></li>
                 <li><a href="./nosotros.html" class="mobile_item fa-solid fa-circle-info"></a></li>
                 <li><a href="./faqs.html" class="mobile_item fa-solid fa-circle-question"></a></li>
@@ -33,7 +32,6 @@
                 <ul>
                     <li><a href="../index.html" class="menu_item">Inicio</a></li>
                     <li><a href="./productos.html" class="menu_item">Productos</a></li>
-                    <li><a href="./carrito.html" class="menu_item">Carrito</a></li>
                     <li><a href="./contacto.html" class="menu_item">Contacto</a></li>
                     <li><a href="./nosotros.html" class="menu_item">Nosotros</a></li>
                     <li><a href="./faqs.html" class="menu_item">FAQs</a></li>
@@ -41,13 +39,49 @@
             </nav>
         </header>
 
-        <main>
-            <div class="d-flex justify-content-center">
-                <div class="spinner-border text-info" role="status" aria-hidden="true"></div>
+        <main class="mainContacto">
+
+            <div class="content">
+                
+                <h2 class="title">Contáctanos</h2>
+                <div class="boxContact">
+                    <div class="contact-form" id="form">
+                        <form>
+                            <div>
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" name="nombre" id="nombre" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="mail" name="email" id="email" required>
+                            </div>
+                            <div>
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" name="telefono" id="telefono">
+                            </div>
+                            <div>
+                                <label for="asunto">Asunto</label>
+                                <input type="text" name="asunto" id="asunto">
+                            </div>
+                            <div class="block">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" id="mensaje" cols="10" rows="5"></textarea>
+                            </div>
+                            <div class="block">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="boxInfo">
+                        <h2>¡Importante!</h2>
+                        <p><i class="fa-solid fa-circle-exclamation"></i> Tené en cuenta que si necesitas un cuadro para una fecha especial hay que encargarlo con tiempo. Dependiendo de la dificultad del diseño puede tardar hasta un mes.
+                        <br> 
+                        Para diseños personalizados comentanos tu idea y, si tenés, adjunta imágenes.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <p>Página en construcción</p>
-            </div>
+
         </main>
 
         <footer>
@@ -64,8 +98,5 @@
         </footer>
     </div>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
 </body>
 </html>
